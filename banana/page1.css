@@ -1,21 +1,27 @@
-p{
+h1{
     text-align: center;
-      color: yellow;
+    color: rgb(206, 180, 12);
+    margin-top: 10%;
     
 }
 
 body{
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
 }
 img{
-    width: 300px;
+    width: 100px;
+    margin-left: 35%;
+    margin-top: 10%;
 }
 .labels {
     display: flex;
     justify-content: space-between;
-    width: 260px; /* Adjust width as needed */
+    width: 270px; /* Adjust width as needed */
     margin-bottom: 10px; /* Space between labels and dropdowns */
-    margin-left: 13%;
+    margin-left: 15%;
+    margin-top: 20%;
+    font-size: 120%;
+    font-weight: 600;
 }
 .dropdowns {
     display: flex;
