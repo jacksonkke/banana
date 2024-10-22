@@ -1,42 +1,69 @@
+
+
+
 h1{
     text-align: center;
-    color: rgb(206, 180, 12);
-    margin-top: 10%;
+    color: rgb(96, 151, 81);
+    margin-top: 5%;
+    font-size: 150%;
     
 }
 
+p{
+    text-align: center;
+    font-size:100% ;
+    
+}
+
+.will{
+    margin-top: -8%;
+}
+
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 247, 202);
 }
 img{
-    width: 100px;
-    margin-left: 35%;
-    margin-top: 10%;
+    width: 300px;
+    margin-left:12% ;
+    margin-top: -5%;
 }
 .labels {
     display: flex;
+    text-align: center;
     justify-content: space-between;
-    width: 270px; /* Adjust width as needed */
+    width: 290px; /* Adjust width as needed */
     margin-bottom: 10px; /* Space between labels and dropdowns */
-    margin-left: 15%;
+    margin-left: 14%;
     margin-top: 20%;
     font-size: 120%;
-    font-weight: 600;
+    font-weight: 300;
 }
 .dropdowns {
+    text-align: center;
     display: flex;
     justify-content: space-between;
     width: 300px; /* Match the width of the label row */
-    margin-left: 10%;
+    margin-left: 12%;
+    font-weight: 50;
 }
 .result{
-    margin-top: 10%;
+    margin-top: 15%;
     font-size: 18px;
-    font-weight: bold;
+    margin-left: 2%;
+    font-weight: 300;
     text-align: center;
 
 }
 .button-container {
-    text-align: center; /* Centers the button horizontally */
-    margin-top: 20px;
+  background-color: #000000; /* Green */
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 6px 25px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 38%;
+  margin-top: 35%;
 }
