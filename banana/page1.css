@@ -14,7 +14,7 @@ h2{
     text-align: center;
     margin-top: 0%;
     font-size: 30px;
-    margin-left: 2%;
+    margin-left: 0%;
     
 }
 p{
@@ -22,7 +22,7 @@ p{
     margin-top: -7%;
     font-size: 15px;
     font-weight: 300;
-    margin-left: 3%;
+    margin-left: 0%;
     
 }
 
@@ -30,17 +30,18 @@ body{
     background-color: rgb(255, 255, 255);
 }
 img{
-    width: 390px;
-    margin-left:-1% ;
-    margin-top: -12%;
+    text-align: center;
+    width: 300px;
+    margin-left:11% ;
+    margin-top: -3%;
 }
 .labels {
     display: flex;
     text-align: center;
     justify-content: space-between;
-    width: 280px; /* Adjust width as needed */
+    width: 270px; /* Adjust width as needed */
     margin-bottom: 10px; /* Space between labels and dropdowns */
-    margin-left: 17%;
+    margin-left: 16%;
     margin-top:10%;
     font-size: 120%;
     font-weight: 300;
@@ -50,14 +51,15 @@ img{
     text-align: center;
     display: flex;
     justify-content: space-between;
-    width: 304px; /* Match the width of the label row */
-    margin-left: 13%;
+    width: 270px; /* Match the width of the label row */
+    margin-left: 16%;
     font-weight: 50;
 }
 .result{
+    text-align: center;
     margin-top: 15%;
     font-size: 20px;
-    margin-left: 2%;
+    margin-left: 0%;
     font-weight:300;
     text-align: center;
 
@@ -70,13 +72,13 @@ img{
 .button-container {
   background-color: #000000; /* Green */
   border: none;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 47);
   padding: 6px 25px;
   border-radius: 20px;
   text-align: center;
   text-decoration:none;
   display: inline-block;
   font-size: 10px;
-  margin-left: 38%;
+  margin-left: 37%;
   margin-top: 25%;
 }
