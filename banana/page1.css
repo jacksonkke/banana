@@ -14,13 +14,15 @@ h2{
     text-align: center;
     margin-top: 0%;
     font-size: 30px;
+    margin-left: 2%;
     
 }
 p{
     text-align: center;
-    margin-top: -6%;
+    margin-top: -7%;
     font-size: 15px;
     font-weight: 300;
+    margin-left: 3%;
     
 }
 
@@ -38,7 +40,7 @@ img{
     justify-content: space-between;
     width: 280px; /* Adjust width as needed */
     margin-bottom: 10px; /* Space between labels and dropdowns */
-    margin-left: 16%;
+    margin-left: 17%;
     margin-top:10%;
     font-size: 120%;
     font-weight: 300;
@@ -49,13 +51,13 @@ img{
     display: flex;
     justify-content: space-between;
     width: 304px; /* Match the width of the label row */
-    margin-left: 12%;
+    margin-left: 13%;
     font-weight: 50;
 }
 .result{
     margin-top: 15%;
     font-size: 20px;
-    margin-left: 0%;
+    margin-left: 2%;
     font-weight:300;
     text-align: center;
 
@@ -75,6 +77,6 @@ img{
   text-decoration:none;
   display: inline-block;
   font-size: 10px;
-  margin-left: 37%;
-  margin-top: 15%;
+  margin-left: 38%;
+  margin-top: 25%;
 }
