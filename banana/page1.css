@@ -1,0 +1,36 @@
+p{
+    text-align: center;
+      color: yellow;
+    
+}
+
+body{
+    background-color: aquamarine;
+}
+img{
+    width: 300px;
+}
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 260px; /* Adjust width as needed */
+    margin-bottom: 10px; /* Space between labels and dropdowns */
+    margin-left: 13%;
+}
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    width: 300px; /* Match the width of the label row */
+    margin-left: 10%;
+}
+.result{
+    margin-top: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.button-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 20px;
+}
