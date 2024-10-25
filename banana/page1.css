@@ -41,7 +41,7 @@ img{
     justify-content: space-between;
     width: 270px; /* Adjust width as needed */
     margin-bottom: 10px; /* Space between labels and dropdowns */
-    margin-left: 16%;
+    margin-left: 17%;
     margin-top:10%;
     font-size: 120%;
     font-weight: 300;
@@ -51,9 +51,10 @@ img{
     text-align: center;
     display: flex;
     justify-content: space-between;
-    width: 270px; /* Match the width of the label row */
-    margin-left: 16%;
+    width: 280px; /* Match the width of the label row */
+    margin-left: 15%;
     font-weight: 50;
+    margin-top: 3%;
 }
 .result{
     text-align: center;
@@ -70,15 +71,41 @@ img{
     font-size: 25px;
 }
 .button-container {
-  background-color: #000000; /* Green */
-  border: none;
-  color: rgb(255, 255, 47);
-  padding: 6px 25px;
-  border-radius: 20px;
+  
   text-align: center;
   text-decoration:none;
   display: inline-block;
   font-size: 10px;
-  margin-left: 37%;
-  margin-top: 25%;
+  margin-left: 36%;
+  margin-top: 30%;
+}
+
+.button{
+    background-color: #000000; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    border-radius: 20px;
+    
+}
+select{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px;
+}
+select:focus{
+    background-color: #fde43f;
+    color: #000000;
+}
+
+option{
+    background-color: rgb(140, 192, 20);
+    color: #c82b2b;
+}
+
+option:checked{
+    background-color: #cc3535;
+    color: rgb(68, 221, 88);
 }
