@@ -1,33 +1,50 @@
 
 
 img{
-    text-align: center;
+
     width: 300px;
-    margin-left:11% ;
-    margin-top: -3%;
+    margin:-1em auto;
+    display: block;
 }
 
 h2{
     text-align: center;
-    margin-top: 0%;
     font-size: 30px;
-    margin-left: 0%;
+    
 }
 
 p{
     text-align: center;
-    margin-top: 130%;
+    margin-top: 0%;
     font-size: 20px;
-    margin-left: 0%;
+    
 }
-
+.page2button {
+  
+    text-align: center;
+    text-decoration:none;
+    font-size: 10px;
+}
 .button{
     background-color: #000000; /* Green */
     border: none;
     color: rgb(255, 255, 255);
     padding: 10px 40px;
     border-radius: 20px;
-    margin-top: 124%;
     font-size: 15px;
-    margin-left: 28%;
+    margin:0 auto;
+}
+.date{
+    font-size: 10px;
+    text-align: center;
+}
+.time{
+    text-align: center;
+}
+.head{
+    max-width: 500px;
+    margin-inline: auto;
+}
+.countdown{
+    text-align: center;
 }
