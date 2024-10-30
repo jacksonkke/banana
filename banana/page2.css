@@ -44,24 +44,23 @@ p{
 .expire{
     text-align: center;
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 400;
     font-style: oblique;
     margin-top: 12%;
     color: #dd2727;
-    padding: 10px 10px;
-    background-color: #000000;
+    
     border: none;
 
 }
 .choice{
     text-align: center;
-    margin-top: 6%;
+    margin-top: -1%;
 }
 .countdown{
     text-align: center;
     font-size: 45px;
     font-weight: 400;
-    margin-top: 13%;
+    margin-top: 19%;
     padding: 0px 0px;
     border: #000000;
     color:#dd2727;

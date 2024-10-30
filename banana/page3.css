@@ -1,13 +1,14 @@
 img{
-    text-align: center;
+    
     width: 300px;
-    margin-left:11% ;
-    margin-top: -3%;
+    margin: -1em auto;
+    display: block;
+
 }
 
 h2{
     text-align: center;
-    margin-top: 0%;
+    margin-top: 5%;
     font-size: 30px;
-    margin-left: 0%;
+    
 }
