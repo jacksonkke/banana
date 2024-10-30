@@ -2,14 +2,16 @@
 img{
     
     width: 300px;
-    margin: -1em auto;
+    margin: -12em auto;
     display: block;
+
+    animation: move 3s ease-in-out infinite alternate;
 
 }
 
 h2{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 200px;
     font-size: 30px;
 }
 p{
@@ -58,8 +60,7 @@ body{
 .result{
     text-align: center;
     font-size: 20px;
-    margin:5em auto;
-    
+    margin:4em auto;
     font-weight:300;
     text-align: center;
 
@@ -68,6 +69,7 @@ body{
     font-weight: 400 ;
     color: rgb(235, 23, 23);
     font-size: 25px;
+    
 }
 .button-container {
   
@@ -81,7 +83,7 @@ body{
 .button{
     background-color: #000000; /* Green */
     border: none;
-    margin: -2em auto ;
+    margin: em auto ;
     color: rgb(255, 255, 255);
     padding: 10px 40px;
     border-radius: 20px;
@@ -112,4 +114,21 @@ select:focus{
 .dropdowns select option:checked {
     background-color: yellow; /* Change background of selected option */
     color: black; /* Text color of selected option */
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+@keyframes move-reverse{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
 }
