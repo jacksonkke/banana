@@ -8,7 +8,7 @@ function showSelectedTime() {
     var minuteValue = parseInt(minute) || 0;
 
     // Display the selected time in the format "X days, Y hours, Z minutes"
-    document.getElementById("selectedTime").innerText = `${dayValue} day(s), ${hourValue} hour(s), ${minuteValue} minute(s)`;
+    document.getElementById("selectedTime").innerText = `${dayValue} days : ${hourValue} hours : ${minuteValue} mins `;
 }
 
 document.getElementById('myButton').addEventListener('click', function() {
@@ -27,7 +27,7 @@ document.getElementById('myButton').addEventListener('click', function() {
     const year = now.getFullYear();
     const month = (now.getMonth() + 1).toString().padStart(2, '0');
     const day = now.getDate().toString().padStart(2, '0');
-    const currentDate = `${year}-${month}-${day}`;
+    const currentDate = `${year}/${month}/${day}`;
 
     const hours = now.getHours().toString().padStart(2, '0');
     const minutes = now.getMinutes().toString().padStart(2, '0');

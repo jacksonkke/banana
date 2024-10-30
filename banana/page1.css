@@ -1,18 +1,23 @@
 
+img{
+    
+    width: 300px;
+    margin: -1em auto;
+    display: block;
+
+}
 
 h2{
     text-align: center;
-    margin-top: 0%;
+    margin-top: 5%;
     font-size: 30px;
-    margin-left: 0%;
-    
 }
 p{
     text-align: center;
     padding: 10px 0;
     font-size: 15px;
     font-weight: 300;
-    margin-left: 0%;
+    margin-top:-2em;
     
 }
 h1{
@@ -27,13 +32,7 @@ h1{
 body{
     background-color: rgb(255, 255, 255);
 }
-img{
-    
-    width: 300px;
-    margin:0 auto;
-    display: block;
-    margin-top: -3%;
-}
+
 .labels {
     display: flex;
     margin: 2em auto;
@@ -107,7 +106,7 @@ select:focus{
     color: blue; /* Option text color */
 }
 .dropdowns select:hover {
-    background-color: #ffa856; /* Light gray background on hover */
+    background-color: #ffe056; /* Light gray background on hover */
     /* border-color: blue; */
 }
 .dropdowns select option:checked {
