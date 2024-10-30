@@ -4,7 +4,7 @@ img{
     width: 300px;
     margin: -12em auto;
     display: block;
-
+    /*动画      运行时间  两头快中间慢    无限次运动*/
     animation: move 3s ease-in-out infinite alternate;
 
 }
@@ -121,6 +121,7 @@ select:focus{
         transform: rotate(-30deg);
     }
     100%{
+        /*顺时针*/
         transform: rotate(30deg);
     }
 }
