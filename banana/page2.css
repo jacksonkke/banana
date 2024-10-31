@@ -10,7 +10,7 @@ img{
 
 h2{
     text-align: center;
-    margin-top: 5%;
+    margin-top: 4%;
     font-size: 30px;
     
 }
@@ -19,25 +19,25 @@ h2{
     padding: 10px 0;
     font-size: 15px;
     font-weight: 300;
-    margin-top:-2em;
+    margin-top:-35px;
 }
 p{
     text-align: center;
     margin-top: 4%;
     font-size: 20px;
     font-weight: 200;
-    margin-bottom: 3%;
     
 }
 .date{
     font-size: 25px;
+    margin-top: -6%;
     text-align: center;
     color: #000000;
 }
 .time{
     text-align: center;
     font-size: 25px;
-    margin-top: 1%;
+    margin-top:0%;
     color: #000000;
 }
 
@@ -54,13 +54,13 @@ p{
 }
 .choice{
     text-align: center;
-    margin-top: -1%;
+    margin-top: -7%;
 }
 .countdown{
     text-align: center;
     font-size: 45px;
     font-weight: 400;
-    margin-top: 19%;
+    margin-top: 16%;
     padding: 0px 0px;
     border: #000000;
     color:#dd2727;
@@ -80,7 +80,7 @@ p{
     color: rgb(255, 255, 255);
     padding: 10px 40px;
     border-radius: 20px;
-    margin:6em auto;
+    margin:7em auto;
 }
 
 .head{
