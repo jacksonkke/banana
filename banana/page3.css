@@ -20,3 +20,64 @@ h1{
     margin-top:-3%;
     font-size: 10px;
 }
+
+/* Style for the history container */
+.history-container {
+    text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 1rem; /* Space between blocks */
+        padding:10px;
+    }
+
+    /* Ensure each block acts as a positioning context for its label */
+.history-block {
+    position: relative; /* Makes the label position relative to each block */
+    background-color: #ebc974;
+    border: 1px solid #f3be00;
+    padding: 0.1rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; /* Add space between blocks */
+}
+
+/* Style for selection text */
+.selection-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color:white;
+  
+}
+/* Style for timestamp text */
+.timestamp-text {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+.history-label {
+    position: absolute;
+    top: -1.2rem; /* Adjust distance from the block */
+    left: 0.4rem; /* Adjust horizontal position if needed */
+    background-color: #8f6201;
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+}
+.page3button {
+  
+    text-align: center;
+    text-decoration:none;
+    font-size: 10px;
+
+}
+.button{
+    background-color: #000000; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin:7em auto;
+}

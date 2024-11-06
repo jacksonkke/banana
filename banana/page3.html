@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="page3.css">
-    <script src="page1.js" defer></script>
+    <script src="storage.js" defer></script>
+    <script src="page3.js" defer></script>
     <title>The Banana</title>
 </head>
 <body>
     <img src="banana.png" alt="banana">
     <h2>The Banana Archive</h2>
-    <p>1 days: 3 hours: 18 mins-----3days: 20 hours: 10 mins</p>
-    <h1 class="time">-----2024.11.2(13:18)-------------------------------- 2024.11.2(15:20)</h1>
-    <p>1 days : 3 hours : 18 mins</p>
-    <p>2024.11.2(17:28)</p>
+     <!-- Container to display stored selections -->
+ <div id="historyContainer" class="history-container">
+    <!-- Selections will be loaded here by JavaScript -->
+</div>
+<div class="page3button">
+    <button class="button" id="myButton" onclick="goToPage4()">Next</button>
+</div>
 </body>
 </html>
