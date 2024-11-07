@@ -57,7 +57,7 @@ h2{
     position: absolute;
     font-family: "Copperplate", monospace, sans-serif;
     top: -1.3rem; /* Adjust distance from the block */
-    left: -0.05rem; /* Adjust horizontal position if needed */
+    left: -0.06rem; /* Adjust horizontal position if needed */
     background-color: #8f6201;
     color: #fff;
     padding: 0.25rem 0.2rem;
