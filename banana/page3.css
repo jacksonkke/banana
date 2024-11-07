@@ -10,8 +10,10 @@ img{
 
 h2{
     text-align: center;
+    font-family: Helvetica, serif;
     margin-top: 200px;
     font-size: 30px;
+    font-weight: 800;
     
 }
 
@@ -53,12 +55,14 @@ h2{
 
 .history-label {
     position: absolute;
+    font-family: "Copperplate", monospace, sans-serif;
     top: -1.3rem; /* Adjust distance from the block */
     left: -0.05rem; /* Adjust horizontal position if needed */
     background-color: #8f6201;
     color: #fff;
-    padding: 0.1rem 0.5rem;
+    padding: 0.25rem 0.2rem;
     font-size: 0.8rem;
+    box-shadow: 4px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px 5px 0 0; /* Rounded top corners */
 }
 .page3button {

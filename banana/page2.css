@@ -12,13 +12,15 @@ img{
 
 h2{
     text-align: center;
+    font-family: Helvetica, serif;
     margin-top: 200px;
     font-size: 30px;
-    
+    font-weight: 800;
 }
 .year{
     text-align: center;
     padding: 10px 0;
+    font-family: "Copperplate", monospace, sans-serif;
     font-size: 15px;
     font-weight: 300;
     margin-top:-2em;
@@ -47,6 +49,7 @@ p{
 .expire{
     text-align: center;
     font-size: 30px;
+    font-family: "Copperplate", monospace, sans-serif;
     font-weight: 400;
     font-style: oblique;
     margin-top: 12%;

@@ -50,7 +50,7 @@ function loadSelectionHistory() {
 }
 
 const date = new Date();
-const formattedDateTime = date.toLocaleString("timestamp-text", {
+const formattedDateTime = date.toLocaleString("en-GB", {
   year: "numeric",
   month: "2-digit",
   day: "2-digit",
