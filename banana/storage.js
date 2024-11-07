@@ -2,7 +2,7 @@
 
 function saveSelectionToStorage(day, hour, minute) {
     const timestamp = new Date().toISOString();
-    const selection = `${day} days: ${hour} hours: ${minute} minutes`;
+    const selection = `${day}d : ${hour}h : ${minute}min`;
     const entry = { timestamp, selection };
 
     let history = JSON.parse(localStorage.getItem('timeSelectionHistory')) || [];
@@ -48,3 +48,14 @@ function loadSelectionHistory() {
         container.appendChild(block);
     });
 }
+
+const date = new Date();
+const formattedDateTime = date.toLocaleString("timestamp-text", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit",
+});
+console.log(formattedDateTime);

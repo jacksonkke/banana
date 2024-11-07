@@ -14,7 +14,7 @@ function showSelectedTime() {
     var minuteValue = parseInt(minute) || 0;
 
     // Display the selected time in the format "X days, Y hours, Z minutes"
-    document.getElementById("selectedTime").innerText = `${dayValue} days : ${hourValue} hours : ${minuteValue} mins `;
+    document.getElementById("selectedTime").innerText = `${dayValue}d : ${hourValue}h : ${minuteValue}min `;
 }
 
 function saveSelectionToStorage(day, hour, minute) {
