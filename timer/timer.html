@@ -3,47 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="timer.js" defer></script>
-    <title>Timer</title>
+    <title>timer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f5f5f5;
+            background-color: #000000;
+            flex-direction: column;
         }
         #timer {
-            font-size: 20em;
+            font-size: 2000%;
+            color: red;
             margin-bottom: 20px;
-            color: brown;
             text-align: center;
-            cursor: pointer; /* 添加指针以指示可以点击 */
+            cursor: pointer;
         }
         #buttons {
             text-align: center;
         }
-        button {
+        button, input {
             font-size: 1em;
-            padding: 10px;
+            padding: 3px 15px;
             margin: 5px;
-            cursor: pointer;
+        }
+        #inputs {
+            margin-bottom: 2px;
+        }
+        input[type="number"] {
+            width: 40px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div>
-        <div id="timer" onclick="showButtons()">00:00:00</div>
-        <div id="buttons">
-            <button onclick="startTimer()">开始</button>
-            <button onclick="stopTimer()">暂停</button>
-            <button onclick="resetTimer()">重置</button>
-        </div>
+    <div id="timer" onclick="showButtons()">00:00:00:00</div>
+    
+    <div id="inputs">
+        <label>天数: <input type="number" id="inputDays" min="0" value="0"></label>
+        <label>小时: <input type="number" id="inputHours" min="0" max="23" value="0"></label>
+        <label>分钟: <input type="number" id="inputMinutes" min="0" max="59" value="0"></label>
+        <label>秒钟: <input type="number" id="inputSeconds" min="0" max="59" value="0"></label>
     </div>
 
-    
+    <div id="buttons">
+        <button onclick="setStartTime()">设置时间</button>
+        <button onclick="startTimer()">开始</button>
+        <button onclick="stopTimer()">暂停</button>
+        <button onclick="resetTimer()">重置</button>
+    </div>
+
+    <script>
+        let days = 0, hours = 0, minutes = 0, seconds = 0;
+        let timerInterval = null;
+
+        function updateTimerDisplay() {
+            const formattedTime = 
+                String(days).padStart(2, '0') + ":" +
+                String(hours).padStart(2, '0') + ":" +
+                String(minutes).padStart(2, '0') + ":" +
+                String(seconds).padStart(2, '0');
+            document.getElementById("timer").innerText = formattedTime;
+        }
+
+        function setStartTime() {
+            // 从输入框获取用户设置的时间
+            days = parseInt(document.getElementById("inputDays").value) || 0;
+            hours = parseInt(document.getElementById("inputHours").value) || 0;
+            minutes = parseInt(document.getElementById("inputMinutes").value) || 0;
+            seconds = parseInt(document.getElementById("inputSeconds").value) || 0;
+            updateTimerDisplay();
+        }
+
+        function startTimer() {
+            // 隐藏所有按钮和输入框
+            document.getElementById("buttons").style.display = "none";
+            document.getElementById("inputs").style.display = "none";
+            
+            // 防止重复启动计时器
+            if (timerInterval) return;
+
+            timerInterval = setInterval(() => {
+                seconds++;
+                if (seconds === 60) {
+                    seconds = 0;
+                    minutes++;
+                    if (minutes === 60) {
+                        minutes = 0;
+                        hours++;
+                        if (hours === 24) {
+                            hours = 0;
+                            days++;
+                        }
+                    }
+                }
+                updateTimerDisplay();
+            }, 1000);
+        }
+
+        function stopTimer() {
+            clearInterval(timerInterval);
+            timerInterval = null;
+
+            // 显示按钮和输入框
+            showButtons();
+            document.getElementById("inputs").style.display = "block";
+        }
+
+        function resetTimer() {
+            stopTimer();
+            days = 0;
+            hours = 0;
+            minutes = 0;
+            seconds = 0;
+            updateTimerDisplay();
+
+            // 显示按钮和输入框
+            showButtons();
+            document.getElementById("inputs").style.display = "block";
+        }
+
+        // 点击计时器区域时显示按钮
+        function showButtons() {
+            document.getElementById("buttons").style.display = "block";
+        }
+    </script>
+
 </body>
 </html>
