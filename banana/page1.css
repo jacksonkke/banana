@@ -1,37 +1,53 @@
 
 img{
     
-    width: 300px;
-    margin: -12em auto;
+    width: 400px;
+    margin: -15em auto;
     display: block;
     /*动画      运行时间  两头快中间慢    无限次运动*/
     animation: move 3s ease-in-out infinite alternate;
 
 }
-
+@keyframes move{
+    0%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        /*顺时针*/
+        transform: rotate(30deg);
+    }
+}
+@keyframes move-reverse{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+}
 h2{
     text-align: center;
     font-family: Helvetica, serif;
-    margin-top: 200px;
-    font-size: 30px;
+    margin-top: 300px;
+    font-size: 40px;
     font-weight: 800;
 }
 p{
     text-align: center;
     padding: 10px 0;
     font-family: "Copperplate", monospace, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
-    margin-top:-2em;
+    margin-top:-1em;
     
 }
 h1{
     text-align: center;
     font-family: "Copperplate", monospace, sans-serif;
     color: rgb(0, 0, 0);
-    margin-top: 0%;
-    font-size: 150%;
-    font-weight: 500;
+    margin-top: 5%;
+    font-size: 60px;
+    font-weight: 300;
     font-style: oblique;
 }
 
@@ -44,10 +60,10 @@ body{
     margin: 2em auto;
     text-align: center;
     justify-content: space-between;
-    width: 270px; /* Adjust width as needed */
+    width: 400px; /* Adjust width as needed */
     margin-bottom: 10px; /* Space between labels and dropdowns */
 
-    font-size: 120%;
+    font-size: 40px;
     font-weight: 300;
 }
 
@@ -56,14 +72,14 @@ body{
     margin:0 auto;
     display: flex;
     justify-content: space-between;
-    width: 280px; /* Match the width of the label row */
+    width: 400px; /* Match the width of the label row */
    
     font-weight: 50;
     margin-top: 3%;
 }
 .result{
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     margin:4em auto;
     font-weight:300;
     text-align: center;
@@ -72,27 +88,10 @@ body{
 .select-time{
     font-weight: 400 ;
     color: rgb(235, 23, 23);
-    font-size: 25px;
+    font-size: 50px;
     
-}
-.button-container {
-  
-  text-align: center;
-  text-decoration:none;
-  font-size: 10px;
-  
-  
 }
 
-.button{
-    background-color: #000000; /* Green */
-    border: none;
-    margin: -10px auto ;
-    color: rgb(255, 255, 255);
-    padding: 10px 40px;
-    border-radius: 20px;
-    
-}
 select{
     text-align: center;
     background-color: #000000;
@@ -120,20 +119,22 @@ select:focus{
     color: black; /* Text color of selected option */
 }
 
-@keyframes move{
-    0%{
-        transform: rotate(-30deg);
-    }
-    100%{
-        /*顺时针*/
-        transform: rotate(30deg);
-    }
-}
-@keyframes move-reverse{
-    0%{
-        transform: rotate(0);
-    }
-    100%{
-        transform: rotate(-90deg);
-    }
-}
+.button-container {
+  
+    text-align: center;
+    text-decoration:none;
+    font-size: 10px;
+    
+    
+  }
+  
+  .button{
+      background-color: #000000; /* Green */
+      border: none;
+      margin: -10px auto ;
+      font-size: 15px;
+      color: rgb(255, 255, 255);
+      padding: 17px 50px;
+      border-radius: 30px;
+      
+  }

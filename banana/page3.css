@@ -1,7 +1,7 @@
 img{
     
-    width: 300px;
-    margin: -12em auto;
+    width: 400px;
+    margin: -15em auto;
     display: block;
     /*动画      运行时间  两头快中间慢    无限次运动*/
     animation: move 3s ease-in-out infinite alternate;
@@ -11,10 +11,9 @@ img{
 h2{
     text-align: center;
     font-family: Helvetica, serif;
-    margin-top: 200px;
-    font-size: 30px;
+    margin-top: 300px;
+    font-size: 40px;
     font-weight: 800;
-    
 }
 
 
@@ -76,8 +75,9 @@ h2{
     background-color: #000000; /* Green */
     border: none;
     color: rgb(255, 255, 255);
-    padding: 10px 40px;
-    border-radius: 20px;
+    font-size: 15px;
+    padding: 17px 50px;
+    border-radius: 30px;
     margin:7em auto;
 }
 

@@ -2,8 +2,8 @@
 
 img{
     
-    width: 300px;
-    margin: -12em auto;
+    width: 400px;
+    margin: -15em auto;
     display: block;
     /*动画      运行时间  两头快中间慢    无限次运动*/
     animation: move 3s ease-in-out infinite alternate;
@@ -13,48 +13,47 @@ img{
 h2{
     text-align: center;
     font-family: Helvetica, serif;
-    margin-top: 200px;
-    font-size: 30px;
+    margin-top: 300px;
+    font-size: 40px;
     font-weight: 800;
 }
+
 .year{
     text-align: center;
     padding: 10px 0;
     font-family: "Copperplate", monospace, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 300;
-    margin-top:-2em;
-    
+    margin-top:-1em;
 }
 p{
     text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 50px;
+    font-size: 30px;
     font-weight: 200;
     
 }
 .date{
-    font-size: 25px;
+    font-size: 40px;
     margin-top: -20px;
     text-align: center;
     color: #000000;
 }
 .time{
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     margin-top:0%;
     color: #000000;
 }
 
 .expire{
     text-align: center;
-    font-size: 30px;
+    font-size: 47px;
     font-family: "Copperplate", monospace, sans-serif;
     font-weight: 400;
     font-style: oblique;
-    margin-top: 12%;
+    margin-top: 18%;
     color: #dd2727;
-    
     border: none;
 
 }
@@ -64,9 +63,9 @@ p{
 }
 .countdown{
     text-align: center;
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 400;
-    margin-top: 16%;
+    margin-top: 20%;
     padding: 0px 0px;
     border: #000000;
     color:#dd2727;
@@ -77,15 +76,16 @@ p{
   
     text-align: center;
     text-decoration:none;
-    font-size: 10px;
+    font-size: 20px;
 
 }
 .button{
     background-color: #000000; /* Green */
     border: none;
+    font-size: 15px;
     color: rgb(255, 255, 255);
-    padding: 10px 40px;
-    border-radius: 20px;
+    padding: 20px 50px;
+    border-radius: 30px;
     margin:7em auto;
 }
 
