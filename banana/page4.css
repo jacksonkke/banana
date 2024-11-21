@@ -7,7 +7,6 @@ img{
     animation: move 3s ease-in-out infinite alternate;
 
 }
-
 @keyframes move{
     0%{
         transform: rotate(-30deg);
@@ -25,3 +24,112 @@ img{
         transform: rotate(-90deg);
     }
 }
+h2{
+    text-align: center;
+    font-family: Helvetica, serif;
+    margin-top: 200px;
+    font-size: 30px;
+    font-weight: 800;
+    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Disable page scroll */
+    font-family: Arial, sans-serif;
+}
+.head{
+    max-width:500px;
+    text-align: center;
+}
+
+.video-container {
+    width: 100%;
+    height:500px;
+    /* height: calc(100vh - 400px);  */
+    /* Leave space for the heading */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+  #camera-feed {
+     /* transform: scaleX(-1);  */
+    /* Flips the video horizontally */
+
+    /* transform: scaleY(-1);   */
+    /* Flips the video vertically */
+
+    /* transform: rotate(90deg);  */
+    /* Rotates the video 90 degrees clockwise */
+    width: 60%; /* Fit to container width */
+    height: 100%; /* Take up all available height */
+    max-width: 900px; /* Optional: Restrict maximum width */
+    max-height: 480px; /* Optional: Restrict maximum height */
+    border: 0; /* No border */
+    overflow: hidden; /* No scroll bars */
+    display: block;
+    margin: 0 auto;
+
+    /* border: 5px solid #ffcc00; /* Add a 5px yellow border */
+    /* border-radius: 10px; /* Optional: Rounded corners */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for better visibility */
+    } 
+
+    .form-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 20px;
+        background: #fff;
+        display: block;
+        margin-top: -100px;
+       
+        border-radius: 8px;
+        text-align: center;
+    }
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    /* Form styling */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    label {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    input {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    input:focus {
+        outline: none;
+        border-color: #007BFF;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
